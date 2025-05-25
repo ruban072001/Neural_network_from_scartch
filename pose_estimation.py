@@ -1,6 +1,5 @@
 import cv2
 import mediapipe as mp
-import os
 
 def pose_estimation_on_video(video_path):
     mp_pose = mp.solutions.pose
@@ -45,5 +44,5 @@ def pose_estimation_on_video(video_path):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    video_path = r"C:\Users\Ruban\Downloads\UCF101\UCF-101\PlayingFlute\v_PlayingFlute_g01_c01.avi"
+    video_path = r"C:\Users\Ruban\Downloads\UCF101\UCF-101\RopeClimbing\v_RopeClimbing_g24_c01.avi"
     pose_estimation_on_video(video_path)
